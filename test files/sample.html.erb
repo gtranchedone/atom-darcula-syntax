@@ -1,9 +1,16 @@
-<!--Sample HTML-->
+<!--Sample HTML with Atom Darcula-->
 <html>
   <head>
-    <link href="http://google.com" />
+    <link href="http://example.com" />
   </head>
   <body>
+    <div name="hello" id="some-id" class="some-class">
+      <a href="http://google.com">Hello</a>
+    </div>
+    <%= render @users %>
     <%= link_to 'Page', @user, class: 'some-class' %>
+    <section name="test">
+      <span>Hello</span>
+    </section>
   </body>
 </html>

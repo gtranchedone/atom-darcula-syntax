@@ -14,7 +14,6 @@
 }
 
 .entity {
-
   &.name.type {
     color: @syntax-color-class;
   }
@@ -46,19 +45,19 @@
 }
 
 .storage {
-  color: @hue-3;
+  color: @syntax-color-constant;
 
   &.type {
     &.annotation,
     &.primitive {
-      color: @hue-3;
+      color: @syntax-color-type-declaration;
     }
   }
 
   &.modifier {
     &.package,
     &.import {
-      color: @mono-1;
+      color: @syntax-color-import;
     }
   }
 }
@@ -102,6 +101,10 @@
 .string {
   color: @syntax-color-string;
 
+  .embedded.ruby .source.ruby {
+    color: @syntax-color-attribute;
+  }
+
   &.regexp {
     color: @syntax-color-regex;
 
@@ -127,7 +130,7 @@
     &.separator,
     &.seperator,
     &.array {
-      color: @mono-1;
+      color: @syntax-text-color;
     }
 
     &.heading,
@@ -185,23 +188,18 @@
   &.name.class,
   &.name.type.class {
     color: @syntax-color-type-declaration;
-    font-style: italic;
   }
 
   &.name.section {
-    color: @hue-2;
+    color: @syntax-color-symbol;
   }
 
   &.name.tag {
-    color: @hue-5;
+    color: @syntax-color-property;
   }
 
   &.other.attribute-name {
-    color: @hue-6;
-
-    &.id {
-      color: @hue-2;
-    }
+    color: @syntax-color-keyword;
   }
 }
 
@@ -269,9 +267,30 @@
 // Languages -------------------------------------------------
 
 .markup {
+  &.heading {
+    color: @syntax-color-md-headings;
+
+    .punctuation.definition.heading {
+      color: @hue-2;
+    }
+  }
+
   &.bold {
-    color: @hue-6;
+    color: @syntax-color-md-bold;
     font-weight: bold;
+  }
+
+  &.italic {
+    color: @syntax-color-md-italics;
+    font-style: italic;
+  }
+
+  &.link {
+    color: @syntax-color-url;
+  }
+
+  &.quote {
+    color: @syntax-color-md-quote;
   }
 
   &.changed {
@@ -282,29 +301,8 @@
     color: @hue-5;
   }
 
-  &.italic {
-    color: @hue-3;
-    font-style: italic;
-  }
-
-  &.heading {
-    color: @hue-5;
-
-    .punctuation.definition.heading {
-      color: @hue-2;
-    }
-  }
-
-  &.link {
-    color: @hue-3;
-  }
-
   &.inserted {
     color: @hue-4;
-  }
-
-  &.quote {
-    color: @hue-6;
   }
 
   &.raw {

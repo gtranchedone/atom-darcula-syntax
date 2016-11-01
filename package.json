@@ -1,8 +1,8 @@
 {
   "name": "atom-darcula-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
-  "description": "A syntax theme for Atom inspired by JetBrains' Darcula theme for IntelliJ, RubyMine and their other IDEs. It features more vivid colors than the original Darcula but tries to keep as close as possible. This syntax theme is based on Atom's 'One Dark' theme and works best with the 'One Dark' UI theme.",
+  "version": "0.0.2",
+  "description": "A syntax theme for Atom inspired by JetBrains' Darcula theme for IntelliJ, RubyMine and their other IDEs. It features more vivid colors than the original Darcula, but tries to keep as close as possible. This syntax theme is based on Atom's 'One Dark' theme and works best with the 'One Dark' UI theme.",
   "keywords": [
     "syntax",
     "theme",
